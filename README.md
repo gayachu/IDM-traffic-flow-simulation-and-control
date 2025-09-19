@@ -33,15 +33,15 @@ $$
 
 | Symbol      | Description                                  | Value        |
 |:------------|:---------------------------------------------|:-------------|
-| \(N\)       | Number of vehicles on the ring               | 50           |
-| \(L\)       | Ring circumference [m]                       | 1000         |
-| \(\ell\)    | Vehicle length [m]                           | 5            |
-| \(v_{0}\)   | Desired (free‐flow) speed [m/s]              | 30           |
-| \(a\)       | Maximum acceleration [m/s²]                  | 1.5          |
-| \(b\)       | Comfortable deceleration [m/s²]              | 1.67         |
-| \(s_{0}\)   | Minimum bumper‐to‐bumper gap [m]             | 2            |
-| \(T\)       | Desired time gap [s]                         | 1.5          |
-| \(\delta\)  | Acceleration exponent (unitless)             | 4            |
+| $N$       | Number of vehicles on the ring               | 50           |
+| $L$       | Ring circumference [m]                       | 1000         |
+| $\ell$    | Vehicle length [m]                           | 5            |
+| $v_{0}$   | Desired (free‐flow) speed [m/s]              | 30           |
+| $a$       | Maximum acceleration [m/s²]                  | 1.5          |
+| $b$       | Comfortable deceleration [m/s²]              | 1.67         |
+| $s_{0}$   | Minimum bumper‐to‐bumper gap [m]             | 2            |
+| $T$       | Desired time gap [s]                         | 1.5          |
+| $\delta$  | Acceleration exponent (unitless)             | 4            |
 
 ## Control Strategy
 Control of $u = -0.7*(v_i - v_m)$ where $v_m$ is the mean of all the velocities is applied. This essentially acts as a damper, ensuring all the vehicles start operating at the mean velocity, effectively damping out any stop-and-go waves. This control is only applied to the first and second cars, and the effective equations only for the first two cars become - 
